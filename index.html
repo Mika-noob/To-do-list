@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kawaii To-Do List & Notes</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main-wrapper">
+      <div class="container">
+        <div class="header">
+          <h1>🌸To-Do List 🌸</h1>
+        </div>
+
+        <div class="input-area">
+          <input
+            id="taskInput"
+            type="text"
+            placeholder="Add a cute new task..."
+          />
+          <button onclick="addTask()">Add</button>
+        </div>
+
+        <div id="taskList"></div>
+
+        <button class="delete-btn" onclick="deleteCompleted()">
+          Delete Completed
+        </button>
+      </div>
+
+      <div class="container notes-box">
+        <div class="header">
+          <h1>✨ Notes ✨</h1>
+        </div>
+
+        <div class="notes-content-area">
+          <textarea
+            class="note-textarea"
+            placeholder="Type your cute note here..."
+            rows="10"
+          >
+          </textarea>
+
+          <button class="delete-btn notes-save-btn">Save Note</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
